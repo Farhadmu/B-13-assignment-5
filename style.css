@@ -67,7 +67,7 @@ cursor:pointer;
 }
 
 .active{
-background:linear-gradient(90deg,#7c3aed,#4f46e5);
+background:purple;
 color:white;
 }
 .issue-modal{

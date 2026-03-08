@@ -252,3 +252,11 @@ showIssues(data.data)
 document.getElementById("issueCount").innerText = data.data.length
 
 }
+function setActive(btn){
+
+document.querySelectorAll(".tabs button")
+.forEach(b=>b.classList.remove("active"))
+
+btn.classList.add("active")
+
+}
