@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Issue Tracker</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="nav-left">
+    
+<img 
+src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+class="logo"
+/>
+
+<h2>GitHub Issues Tracker</h2>
+
+</div>
+
+<div class="nav-right">
+
+<input
+type="text"
+placeholder="Search issues..."
+id="search"
+/>
+
+<button class="new-btn" onclick="searchIssue()">+ New Issue</button>
+
+</div>
+
+</nav>
+
+<div class="tabs-box">
+
+<button class="tab active" onclick="filterIssues('all', this)">All</button>
+
+<button class="tab" onclick="filterIssues('open', this)">Open</button>
+
+<button class="tab" onclick="filterIssues('closed', this)">Closed</button>
+
+</div>
+
+<div class="issue-header">
+
+<div class="issue-left">
+
+<div class="issue-icon">
+  <img src="assets/Aperture.png" width="22">
+</div>
+
+<div>
+<h3><span id="issueCount">0</span> Issues</h3>
+<p>Track and manage your project issues</p>
+</div>
+
+</div>
+
+<div class="issue-right">
+    
+
+<span class="dot green"></span>
+Open 
+
+<span class="dot purple"></span>
+Closed
+
+</div>
+
+</div>
+
+<div id="issues" class="grid"></div>
+
+<div class="status-icon">
+<img src="assets/Open-Status.png" width="18">
+</div>
+<div id="modal" class="modal"></div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
